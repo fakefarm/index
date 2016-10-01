@@ -280,3 +280,7 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+.color {
+  background: red;
+}

@@ -5,26 +5,24 @@ APP.Nav = (function() {
 
   Nav.prototype = {
     html: html,
-    insert: insertHtml,
   }
 
-  function insertHtml() {
-    $('nav').html(getHtml());
-  }
-
-  function html() {
-    getHtml();
-  }
-
-  function getHtml(){
+  function html(){
     $.ajax({
       url: "nav.html",
-      context: document.body
     }).done(function(html) {
-      return html;
+      insertHtml(html);
     });
   }
 
+  function insertHtml(html) {
+    $('nav').html(html);
+  }
 
   return Nav
 }());
+
+$(function(){
+  var n = new APP.Nav;
+  n.html();
+});
