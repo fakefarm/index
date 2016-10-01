@@ -1,5 +1,4 @@
 $(function(){
-  debugger;
   var welcome = new APP.Partial('welcome.html', 'welcome');
   welcome.render();
 
