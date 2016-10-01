@@ -1,4 +1,7 @@
 $(function(){
-  var n = new APP.Nav;
-  n.html();
+  // var welcome = new APP.Partial('welcome.html', 'welcome');
+  // welcome.render();
+
+  var nav = new APP.Nav;
+  nav.html();
 });

@@ -20,8 +20,6 @@ describe("Nav", function () {
         }
       };
 
-      jasmine.Ajax.install();
-
       var nav = new APP.Nav;
       nav.html();
 
@@ -39,6 +37,6 @@ describe("Nav", function () {
       //   onFailure: onFailure
       // })
     });
-    
+
   });
 });
