@@ -5,6 +5,7 @@ APP.Nav = (function() {
 
   Nav.prototype = {
     html: html,
+    // todo - Paint
   }
 
   function html(){
@@ -16,13 +17,10 @@ APP.Nav = (function() {
   }
 
   function insertHtml(html) {
-    $('nav').html(html);
+    var $h = $(html);
+    $h.removeClass('hidden').addClass('color')
+    $('nav').html($h);
   }
 
   return Nav
 }());
-
-$(function(){
-  var n = new APP.Nav;
-  n.html();
-});
